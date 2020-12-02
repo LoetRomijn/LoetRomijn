@@ -1,8 +1,88 @@
 $font-stack: Helvetica,
 sans-serif;
-$primary-color: #333;
+
 
 body {
     font: 100% $font-stack;
-    color: $primary-color;
+    color: var(---primary);
+}
+
+// HEADINGS
+h1,
+h2,
+h3 {
+    width: 100%;
+    color: var(--text-default);
+    line-height: 1.4;
+    transition: var(--transition);
+}
+
+h1 {
+    font-size: var(--size-h1);
+}
+
+h2 {
+    font-size: var(--size-h2);
+}
+
+h3 {
+    font-size: var(--size-h3);
+}
+
+// LINKS
+a,
+a>*,
+a:link,
+a:visited,
+a:active {
+    text-decoration-color: var(--text-secondary);
+}
+
+a:hover,
+a:hover>* {
+    color: var(--text-link);
+    transition: var(--transition);
+    text-decoration-color: var(--text-link);
+}
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.page-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    margin: var(--s1) auto var(--s1);
+}
+
+.page-content {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 5rem;
+}
+
+
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5rem;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1;
+    background-color: var(--bg-footer);
+
+    span {
+        flex-grow: 1;
+    }
 }

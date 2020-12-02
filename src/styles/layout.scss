@@ -1,0 +1,176 @@
+// Centering, class="full-width full-height flex align-center"
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+// Initiate the flexbox
+
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    @extend %flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    @extend %flex;
+}
+
+.flex-row {
+    flex-direction: row;
+    @extend %flex;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+    @extend %flex;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+    @extend %flex;
+}
+
+// Alignment of all items in the flex-container, applied to main (justify) and
+// cross (align) axis
+.align-center {
+    align-content: center;
+}
+
+.align-start {
+    align-content: flex-start;
+}
+
+.align-end {
+    align-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+// Item alignment in a single line over the cross-axis
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: end;
+}
+
+.items-start {
+    align-items: start;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+// individual alignment of items over the cross axis
+
+.self-align-center {
+    align-self: center;
+}
+
+.self-align-end {
+    align-self: flex-end;
+}
+
+.self-align-start {
+    align-self: flex-start;
+}
+
+.self-align-stretch {
+    align-self: stretch;
+}
+
+.self-justify-center {
+    justify-self: center;
+}
+
+.self-justify-end {
+    justify-self: flex-end;
+}
+
+.self-justify-start {
+    justify-self: flex-start;
+}
+
+.self-justify-stretch {
+    justify-self: stretch;
+}
+
+// grow & shrink
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+.flex-no-grow {
+    flex-grow: 0;
+}
+
+.flex-no-shrink {
+    flex-shrink: 0;
+}
+
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.flex-basis {
+    flex-basis: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.scroll-y {
+    overflow-y: auto;
+}

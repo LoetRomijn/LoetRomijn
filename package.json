@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "loet-romijn-personal-page",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A personal project",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -16,7 +16,7 @@
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-plugin-sass": "^2.6.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -25,9 +25,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/LoetRomijn/LoetRomijn"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/LoetRomijn/LoetRomijn/issues"
   }
 }
